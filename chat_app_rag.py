@@ -1,3 +1,15 @@
+import sys
+import os
+
+# Force the use of pysqlite3 instead of system sqlite3
+try:
+    import pysqlite3
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+except ImportError:
+    print("pysqlite3 not found. Ensure it is installed.")
+
+
+
 import streamlit as st
 import openai
 import os
