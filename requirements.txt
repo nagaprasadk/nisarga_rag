@@ -2,3 +2,8 @@ streamlit
 openai
 chromadb
 python-dotenv
+uvicorn
+fastapi
+pydantic
+numpy
+typing-extensions
